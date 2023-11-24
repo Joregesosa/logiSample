@@ -1,14 +1,21 @@
+<?php   
+    session_destroy();
+
+    session_start();
+    
+    $usuarios = $_SESSION['usuarios'];
+
+    // print_r($usuarios);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/output.css" rel="stylesheet">
+    <link href="./css/output.css" rel="stylesheet">
     <title>Lista de Productos</title>
 </head>
-
-
 <body>
 
 
