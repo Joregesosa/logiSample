@@ -1,11 +1,15 @@
-<?php   
-    session_destroy();
+<?php
 
-    session_start();
-    
-    $usuarios = $_SESSION['usuarios'];
 
-    // print_r($usuarios);
+session_start();
+// $usuarios = null;
+if (isset($_SESSION['listaUsuarios'])) {
+    $usuarios = $_SESSION['listaUsuarios'];
+    print_r($usuarios);
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +20,7 @@
     <link href="./css/output.css" rel="stylesheet">
     <title>Lista de Productos</title>
 </head>
+
 <body>
 
 

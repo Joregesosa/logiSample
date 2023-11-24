@@ -1,4 +1,4 @@
-INSERT INTO datos_personales (nombres, apellidos, identificacion, telefono, pais, edad, hijos, estado) VALUES
+INSERT INTO personas (nombres, apellidos, identificacion, telefono, pais, edad, hijos, estado) VALUES
 ('Juan', 'Pérez', '123456789', '1234567890', 'México', 30, 1, 1),
 ('María', 'González', '987654321', '0987654321', 'España', 25, 0, 1),
 ('Carlos', 'Martínez', '456789123', '4567891230', 'Argentina', 40, 0, 0),
