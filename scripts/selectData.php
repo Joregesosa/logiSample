@@ -11,13 +11,14 @@ try {
     $result = $stm->get_result();
 
     $data = $result->fetch_all(MYSQLI_ASSOC);
-
+ 
     session_start();
     
-    $_SESSION['listaUsuarios'] = $data;
+    $_SESSION['listarPersonas'] = $data;
 
     header('location: ../table.php');
     
 } catch (mysqli_sql_exception $e) {
     echo  $e;
 }
+

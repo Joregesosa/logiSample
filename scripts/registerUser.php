@@ -13,6 +13,7 @@ $hash = password_hash($password, PASSWORD_DEFAULT);
 $sql = "INSERT INTO usuarios(`correo`, `password`) VALUE (?, ?)";
 
 try {
+    
     $stm = $mysqli->prepare($sql);
     $stm->bind_param('ss', $correo, $hash);
     $stm->execute();

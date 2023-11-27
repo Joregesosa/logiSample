@@ -26,11 +26,9 @@ try {
 
     if (password_verify($password, $hash)) {
 
-        session_start();
 
-        $_SESSION['usuarios'] = $data;
+        require_once './selectData.php';
 
-        header('location: ../table.php');
     } else {
 
         echo 'Credeciales incorrectas';
