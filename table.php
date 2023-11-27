@@ -3,8 +3,8 @@
 
 session_start();
 // $usuarios = null;
-if (isset($_SESSION['listaUsuarios'])) {
-    $usuarios = $_SESSION['listaUsuarios'];
+if (isset($_SESSION['usuarios'])) {
+    $usuarios = $_SESSION['usuarios'];
     print_r($usuarios);
 }
 

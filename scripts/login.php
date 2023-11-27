@@ -21,21 +21,20 @@ try {
     $result = $stm->get_result();
 
     $data = $result->fetch_assoc();
- 
 
-    if($data['password'] == $password){
-        session_destroy();
-        // session_start();
-        
+    $hash = $data['password'];
+
+    if (password_verify($password, $hash)) {
+
+        session_start();
+
         $_SESSION['usuarios'] = $data;
-       
-        header('location: ../table.php');
 
-    }else{
+        header('location: ../table.php');
+    } else {
 
         echo 'Credeciales incorrectas';
     }
-    
 } catch (mysqli_sql_exception $e) {
     echo  $e;
 }

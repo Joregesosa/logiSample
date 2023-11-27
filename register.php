@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/output.css" rel="stylesheet">
-    <title>Login</title>
+    <title>Registro de usuario</title>
 </head>
 
 
@@ -16,17 +16,18 @@
             <div class="bg-gray-800 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 md:p-8">
 
             </div>
-            <form action="./scripts/login.php" method="POST" class="p-12 md:p-24">
+            <h1>Registro de Usuario</h1>
+            <form action="./scripts/registerUser.php" method="POST" class="p-12 md:p-24">
 
                 <div class="flex items-center text-lg mb-6 md:mb-8">
 
-                    <input type="text" name="username" id="username" class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Username" />
+                    <input type="text" name="correo" id="correo" class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="correo" />
                 </div>
                 <div class="flex items-center text-lg mb-6 md:mb-8">
 
-                    <input type="text" name="password" id="password" class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Password" />
+                    <input type="password" name="password" id="password" class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Password" />
                 </div>
-                <button class="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Login</button>
+                <button class="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Registrar</button>
             </form>
         </div>
     </div>
